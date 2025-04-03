@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>index</title>
+    <meta charset="UTF-8">
+    <title>Portale Principale</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; }
+        a { text-decoration: none; color: #0056b3; font-size: 1.1em; }
+        a:hover { text-decoration: underline; }
+        h1, h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+    </style>
 </head>
 <body>
-    <h1>Benvenuto nella mia pagina</h1>
-    <p>Seleziona una delle pagine seguenti:</p>
-    
+
+    <h1>Portale Principale</h1>
+    <p>Seleziona la sezione o l'esercizio a cui vuoi accedere:</p>
+
+    <!-- Sezione Piattaforma Lingue -->
+    <h2>Piattaforma Lingue</h2>
     <ul>
-        <li><a href="esercizio1.php">esercizio 1</a></li>
-        <li><a href="esercizio2.php">esercizio 2</a></li>
-        <li><a href="esercizio3.php">esercizio 3</a></li>
-        <li><a href="esercizio4/index.php">esercizio 3</a></li>
-        <li><a href="esercizio5.php">esercizio 5</a></li>
-        <li><a href="esercizio6.php">esercizio 6</a></li>
-        <li><a href="esercizio7/index.html">esercizio 7</a></li>
+        <li>
+            <a href="Progetto_simulazione/">
+                Accedi alla Piattaforma Lingue
+            </a>
+            (Questo ti porterà alla pagina di login della piattaforma)
+        </li>
+        <!-- Nota: Non mettiamo qui logica di login/logout,
+             quella è gestita DENTRO la cartella 'piattaforma_lingue_base' -->
+    </ul>
+
+    <hr>
+
+    <!-- Sezione Esercizi Vari -->
+    <h2>Esercizi Singoli / Altri Progetti</h2>
+    <ul>
+        <li><a href="esercizio1.php">Esercizio 1</a></li>
+        <li><a href="esercizio2.php">Esercizio 2</a></li>
+        <li><a href="esercizio3.php">Esercizio 3</a></li>
+        <li><a href="esercizio4/index.php">Esercizio 4 (nella sua cartella)</a></li>
+        <li><a href="esercizio5.php">Esercizio 5</a></li>
+        <li><a href="esercizio6.php">Esercizio 6</a></li>
+
+        <!-- COME AGGIUNGERE UNA NUOVA SEZIONE (es. in una cartella 'nuovo_progetto') -->
+        <!--
+        <li>
+            <a href="nuovo_progetto/index.php">
+                Vai al Nuovo Progetto
+            </a>
+            (Assicurati che 'nuovo_progetto/index.php' esista)
+        </li>
+        -->
     </ul>
 
 </body>
